@@ -8,8 +8,11 @@
   </parent>
   <artifactId>telegram-plugin-server</artifactId>
   <packaging>jar</packaging>
-  <dependencies>
+  <properties>
+   <teamcity.version>2021.2</teamcity.version>
+  </properties>
 
+  <dependencies>
     <dependency>
       <groupId>com.github.pengrad</groupId>
       <artifactId>java-telegram-bot-api</artifactId>
@@ -19,21 +22,21 @@
     <dependency>
       <groupId>org.jetbrains.teamcity</groupId>
       <artifactId>server-api</artifactId>
-      <version>2021.2</version>
+      <version>${teamcity.version}</version>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>org.jetbrains.teamcity</groupId>
       <artifactId>agent-api</artifactId>
-      <version>2021.2</version>
+      <version>${teamcity.version}</version>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>org.jetbrains.teamcity</groupId>
       <artifactId>tests-support</artifactId>
-      <version>2021.2</version>
+      <version${teamcity.version}</version>
       <scope>test</scope>
     </dependency>
 
